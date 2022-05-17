@@ -1,0 +1,55 @@
+.sidebar{
+    flex: 1;
+    border-right: 0.5px solid rgb(230, 227, 227);
+    min-height: 100vh;
+    background-color:white !important;
+    .top{
+        height:50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+            color: darkblue;
+        }
+    }
+    hr{
+        height: 0px;
+        border: 0.5px solid rgb(230, 227, 227);
+    }
+
+    .center{
+        padding-left: 10px;
+        ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            .title{
+                font-size:10px;
+                font-weight:bold;
+                color:#999;
+                margin-top: 15px;
+                margin-bottom:5px;
+            }
+            li{
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                &:hover{
+                    background-color:rgb(212, 212, 224);
+                }
+                .icon{
+                    font: size 18px;
+                    color: rgb(117, 67, 182)
+
+                }
+                span{
+                    font-size:13px;
+                    font-weight: 600;
+                    color:#888;
+                }
+            }
+        }
+    }
+}

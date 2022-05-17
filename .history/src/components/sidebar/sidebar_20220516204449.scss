@@ -1,0 +1,12 @@
+.sidebar{
+    .top{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        .logo{
+            color:cyan;
+            font-size: 50px;
+            spacing: 5%;
+        }
+    }
+}

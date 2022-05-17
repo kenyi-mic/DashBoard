@@ -1,0 +1,17 @@
+.sidebar{
+    flex: 1;
+    border-right: 0.5px solid lightslategray;
+    min-height: 100vh;
+    background-color:white !important;
+    .top{
+        height:50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+            color: darkblue;
+        }
+    }
+}

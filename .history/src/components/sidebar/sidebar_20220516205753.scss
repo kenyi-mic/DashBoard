@@ -1,0 +1,22 @@
+.sidebar{
+    border-right: 1px solid gray;
+    height:100vh;
+    .top{
+        margin:0px;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        padding:5px;
+      
+        .logo{
+            color:darkblue;
+            font-size: 15px;
+            font-weight: bold;
+        ;
+        }
+    }
+    .ruler{
+        background-color: red;
+        color:aqua;
+    }
+}

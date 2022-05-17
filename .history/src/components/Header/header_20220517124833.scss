@@ -1,0 +1,11 @@
+.header{
+    height:50px;
+    display: flex;
+    align-items:center;
+    .wrapper{
+        display:flex;
+        .items{
+            display: flex;
+        }
+    }
+}

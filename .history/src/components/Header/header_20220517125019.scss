@@ -1,0 +1,13 @@
+.header{
+    height:50px;
+    display: flex;
+    align-items:center;
+    border-bottom: 0.5px solid rgb(230, 227, 227);
+    font-size: 14px;
+    .wrapper{
+        display:flex;
+        .items{
+            display: flex;
+        }
+    }
+}
