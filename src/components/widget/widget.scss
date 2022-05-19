@@ -1,0 +1,48 @@
+.widget{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex: 1;
+    box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(221, 218, 218, 0.47);
+    -moz-box-shadow: 2px 4px 10px 1px rgba(221, 221, 221, 0.47);
+    border-radius: 10px;
+    height: 100px;
+    .right, .left{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        .title{
+            color:rgb(167, 166, 166);
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .counter{
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .link{
+            width:max-content;
+            font-size: 12px;
+            border-bottom: 1px solid gray;
+        }
+        .percentage{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            &.postive{
+                   color:green;
+            }
+            &.negative{
+                color:red;
+            }
+        }
+    }
+    .icon{
+        font-size: 18px;
+        padding:5px;
+        border-radius:5px;
+        align-self: flex-end;
+        color:rgba(81, 9, 122, 0.432);
+    }
+}
