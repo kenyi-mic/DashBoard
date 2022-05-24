@@ -1,0 +1,86 @@
+.datatable {
+    height: 600px;
+    padding: 20px;
+
+    .cellWithImg {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .datatableTitle {
+            width: 100%;
+            font-size: 24px;
+            color: #888;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .cellImg {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+    }
+
+    .cellWithStatus {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        padding: 10px 6px;
+        border-radius: 5px;
+
+
+
+        &.Active {
+            background-color: rgba(0, 128, 0, 0.164);
+            color: green;
+        }
+
+        &.Pending {
+            background-color: rgba(218, 165, 32, 0.274);
+            color: goldenrod;
+        }
+
+        &.Passive {
+            background-color: rgba(158, 9, 9, 0.205);
+            color: crimson;
+        }
+    }
+
+    .cellWithAction {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .viewButton {
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: darkblue;
+            border: 0.5px solid rgba(11, 4, 112, 0.322);
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .deleteButton {
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: crimson;
+            border: 0.2px solid rgba(158, 9, 9, 0.432);
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+}
