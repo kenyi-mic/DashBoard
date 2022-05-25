@@ -8,7 +8,7 @@ export const Datatable = () => {
   const [data, setData] = useState(userRows);
 
   const handleDelete = (id) => {
-    setData(data.filter((item) => item.id !== id));
+    setData(data.filter((item) => item.id === id));
   };
   const actionColumns = [
     {

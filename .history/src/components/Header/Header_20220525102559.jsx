@@ -28,11 +28,7 @@ function Header() {
             English
           </div>
           <div className="item">
-            {darkMode ? (
-              <LightModeOutlined onClick={() => dispatch({ type: "LIGHT" })} />
-            ) : (
-              <DarkModeOutlined onClick={() => dispatch({ type: "DARK" })} />
-            )}
+            {darkMode ? <LightModeOutlined /> : <DarkModeOutlined />}
           </div>
           <div className="item">
             <FullscreenExitOutlined className="icon" />

@@ -1,5 +1,5 @@
 import { DataGrid } from "@material-ui/data-grid";
-import React, { useState } from "react";
+import React from "react";
 import "./datatable.scss";
 import { userColumns, userRows } from "../../datatableSource";
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ export const Datatable = () => {
   const [data, setData] = useState(userRows);
 
   const handleDelete = (id) => {
-    setData(data.filter((item) => item.id !== id));
+    setData(data.filter((item) => item.id === id));
   };
   const actionColumns = [
     {

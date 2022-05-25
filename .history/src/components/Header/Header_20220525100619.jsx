@@ -8,13 +8,11 @@ import {
   ChatBubbleOutlineOutlined,
   ListOutlined,
   NotificationsNoneOutlined,
-  LightModeOutlined,
 } from "@mui/icons-material";
 import { DarkModeContext } from "../../context/darkModeContext";
 
 function Header() {
   const { dispatch } = useContext(DarkModeContext);
-  const { darkMode } = useContext(DarkModeContext);
   return (
     <div className="header">
       <div className="wrapper">
@@ -28,11 +26,10 @@ function Header() {
             English
           </div>
           <div className="item">
-            {darkMode ? (
-              <LightModeOutlined onClick={() => dispatch({ type: "LIGHT" })} />
-            ) : (
-              <DarkModeOutlined onClick={() => dispatch({ type: "DARK" })} />
-            )}
+            <DarkModeOutlined
+              className="icon"
+              onClick={() => dispatch({ type: "TOGGLE" })}
+            />
           </div>
           <div className="item">
             <FullscreenExitOutlined className="icon" />

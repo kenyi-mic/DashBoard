@@ -1,5 +1,5 @@
 import { DataGrid } from "@material-ui/data-grid";
-import React, { useState } from "react";
+import React from "react";
 import "./datatable.scss";
 import { userColumns, userRows } from "../../datatableSource";
 import { Link } from "react-router-dom";
@@ -8,26 +8,21 @@ export const Datatable = () => {
   const [data, setData] = useState(userRows);
 
   const handleDelete = (id) => {
-    setData(data.filter((item) => item.id !== id));
+    setData(data.filter((item) => item.id === id));
   };
   const actionColumns = [
     {
       field: "action",
       headerName: "Action",
       width: "200",
-      renderCell: (params) => {
+      renderCell: () => {
         return (
           <div className="cellWithAction">
             <Link to="/users/view" style={{ textDecoration: "none" }}>
               <div className="viewButton">View</div>
             </Link>
 
-            <div
-              className="deleteButton"
-              onClick={() => handleDelete(params.row.id)}
-            >
-              Delete
-            </div>
+            <div className="deleteButton">Delete</div>
           </div>
         );
       },
@@ -43,7 +38,7 @@ export const Datatable = () => {
       </div>
       <DataGrid
         className="dataGrid"
-        rows={data}
+        rows={userRows}
         columns={userColumns.concat(actionColumns)}
         pageSize={9}
         rowsPerPageOptions={[9]}

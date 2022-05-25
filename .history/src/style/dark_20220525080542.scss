@@ -1,0 +1,48 @@
+.App.dark {
+    background-color: #222;
+    color: #ccc;
+
+    .chartGrid {
+        stroke: #8888;
+    }
+
+    .table {
+        background-color: #111;
+
+        .tableCell {
+            color: #ccc;
+        }
+    }
+
+    .header {
+        color: #999;
+        border-color: #333;
+
+        .search {
+            border-color: #ccc;
+        }
+    }
+
+    .sidebar {
+        background-color: #111;
+        border-color: #333;
+
+        .top {
+            .log {
+                color: #999;
+            }
+        }
+
+        hr {
+            border-color: #333;
+        }
+
+        ul {
+            li {
+                &:hover {
+                    background-color: #333;
+                }
+            }
+        }
+    }
+}

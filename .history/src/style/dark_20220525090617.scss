@@ -1,0 +1,100 @@
+.App.dark {
+    background-color: #222;
+    color: #ccc;
+
+    .chartGrid {
+        stroke: #8888;
+    }
+
+    .table {
+        background-color: #111;
+
+        .tableCell {
+            color: gray;
+        }
+    }
+
+    .header {
+        color: #999;
+        border-color: #333;
+
+        .search {
+            border-color: gray;
+            ;
+
+            .searchInput {
+                color: gray;
+            }
+        }
+
+
+    }
+
+    .sidebar {
+        background-color: #111 !important;
+        border-color: #333;
+
+        .top {
+            .logo {
+                color: #999;
+            }
+
+
+        }
+
+        hr {
+            border-color: #333;
+        }
+
+        .center {
+            .list-group {
+                li {
+                    &:hover {
+                        background-color: #333;
+                    }
+
+                    .icon {
+                        color: #999;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+    .datatable {
+
+
+        .dataGrid {
+            color: gray;
+            border: none;
+
+            .viewButton,
+            .deleteButton {
+                border: none;
+                color: gray;
+
+                &:hover {
+                    color: #ccc;
+                }
+            }
+
+            .cellWithStatus {
+                &.Pending {
+                    color: #999;
+                    border-color: rgb(119, 117, 117);
+                    background-color: rgba(211, 185, 98, 0.192);
+
+                }
+
+                &.Active {
+                    color: #f1f1f1;
+                    border-color: rgba(135, 214, 115, 0.192)
+                }
+            }
+        }
+    }
+
+}

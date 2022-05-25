@@ -8,7 +8,6 @@ import {
   ChatBubbleOutlineOutlined,
   ListOutlined,
   NotificationsNoneOutlined,
-  LightModeOutlined,
 } from "@mui/icons-material";
 import { DarkModeContext } from "../../context/darkModeContext";
 
@@ -28,11 +27,7 @@ function Header() {
             English
           </div>
           <div className="item">
-            {darkMode ? (
-              <LightModeOutlined onClick={() => dispatch({ type: "LIGHT" })} />
-            ) : (
-              <DarkModeOutlined onClick={() => dispatch({ type: "DARK" })} />
-            )}
+            {darkMode ? DarkModeOutlined : LightModeOutlined}
           </div>
           <div className="item">
             <FullscreenExitOutlined className="icon" />

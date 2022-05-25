@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./header.scss";
 import {
   Search,
@@ -8,13 +8,10 @@ import {
   ChatBubbleOutlineOutlined,
   ListOutlined,
   NotificationsNoneOutlined,
-  LightModeOutlined,
 } from "@mui/icons-material";
-import { DarkModeContext } from "../../context/darkModeContext";
 
 function Header() {
   const { dispatch } = useContext(DarkModeContext);
-  const { darkMode } = useContext(DarkModeContext);
   return (
     <div className="header">
       <div className="wrapper">
@@ -28,11 +25,7 @@ function Header() {
             English
           </div>
           <div className="item">
-            {darkMode ? (
-              <LightModeOutlined onClick={() => dispatch({ type: "LIGHT" })} />
-            ) : (
-              <DarkModeOutlined onClick={() => dispatch({ type: "DARK" })} />
-            )}
+            <DarkModeOutlined className="icon" />
           </div>
           <div className="item">
             <FullscreenExitOutlined className="icon" />
